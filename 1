@@ -3,19 +3,22 @@ using namespace std;
 
 int main()
 {
-    int a,b,c;
+    int a,b,c,x;
+    cin>>a>>b;
     if(a<b)
     {
-        a=c;
+        c=a;
         a=b;
         b=c;
     }
-    for(x=a;x<b;x--)
+    x=a;
+    while(x>=b)
     {
         if(x%2!=0)
         {
             cout<<x;
         }
+        x--;
     }
 
     return 0;
